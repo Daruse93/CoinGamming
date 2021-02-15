@@ -1,0 +1,55 @@
+$colorSecond: #76668d;
+
+.coin-list {
+  min-height: 234px;
+
+  @media (max-width: 800px) {
+    min-height: 0;
+  }
+
+  &__item {
+    position: relative;
+    border-bottom: 1px solid $colorSecond;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 40px;
+      background-image: url('/assets/icon.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item-name {
+    font-size: 16px;
+  }
+
+  &__item-price {
+    margin-top: 5px;
+    font-size: 12px;
+    color: $colorSecond;
+  }
+
+  &__item-delete {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    color: $colorSecond;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

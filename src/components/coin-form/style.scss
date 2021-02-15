@@ -1,0 +1,27 @@
+.coin-form {
+  width: 320px;
+  height: 200px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 3px;
+
+  &.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__field {
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    margin-bottom: 30px;
+  }
+
+  &__bottom-text {
+    text-align: center;
+    color: #B3B5BA;
+    font-size: 11px;
+  }
+}
